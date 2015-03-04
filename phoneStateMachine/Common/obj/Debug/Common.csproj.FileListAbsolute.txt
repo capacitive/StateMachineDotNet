@@ -1,0 +1,5 @@
+C:\_repo\StateMachineDotNet\phoneStateMachine\Common\bin\Debug\Common.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Common\bin\Debug\Common.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\_repo\StateMachineDotNet\phoneStateMachine\Common\obj\Debug\Common.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Common\obj\Debug\Common.pdb
