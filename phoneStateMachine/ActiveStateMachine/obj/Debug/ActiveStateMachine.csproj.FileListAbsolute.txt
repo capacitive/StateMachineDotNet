@@ -1,0 +1,5 @@
+C:\_repo\StateMachineDotNet\phoneStateMachine\ActiveStateMachine\bin\Debug\ActiveStateMachine.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\ActiveStateMachine\bin\Debug\ActiveStateMachine.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\ActiveStateMachine\obj\Debug\ActiveStateMachine.csprojResolveAssemblyReference.cache
+C:\_repo\StateMachineDotNet\phoneStateMachine\ActiveStateMachine\obj\Debug\ActiveStateMachine.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\ActiveStateMachine\obj\Debug\ActiveStateMachine.pdb
