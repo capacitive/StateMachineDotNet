@@ -1,0 +1,5 @@
+c:\users\mark\documents\visual studio 2013\Projects\PhoneStateMachine\ConsumerProducer\bin\Debug\ConsumerProducer.exe
+c:\users\mark\documents\visual studio 2013\Projects\PhoneStateMachine\ConsumerProducer\bin\Debug\ConsumerProducer.pdb
+c:\users\mark\documents\visual studio 2013\Projects\PhoneStateMachine\ConsumerProducer\obj\Debug\ConsumerProducer.csprojResolveAssemblyReference.cache
+c:\users\mark\documents\visual studio 2013\Projects\PhoneStateMachine\ConsumerProducer\obj\Debug\ConsumerProducer.exe
+c:\users\mark\documents\visual studio 2013\Projects\PhoneStateMachine\ConsumerProducer\obj\Debug\ConsumerProducer.pdb

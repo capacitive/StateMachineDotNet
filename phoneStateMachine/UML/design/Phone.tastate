@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stateGraph xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" name="" xmlns="http://www.tangiblearchitect.com/dsltools/State">
+  <ArrayOfStereoType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <StereoType>
+      <StereoTypeName>StateGraph</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.StateDiagrams.StateGraph</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>Synchronization</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.StateDiagrams.Synchronization</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>State</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.StateDiagrams.State</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>StartPoint</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.StateDiagrams.StartPoint</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>Flow</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.StateDiagrams.Flow</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>EndPoint</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.StateDiagrams.EndPoint</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>ConditionState</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.StateDiagrams.ConditionState</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>Comment</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.StateDiagrams.Comment</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+  </ArrayOfStereoType>
+  <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+  <comments>
+    <comment Id="b729b7db-1ccc-4068-9063-373d80833290" text="TransitionIncomingCall Trigger: OnlineExternalActive Action: ActionViewPhoneRings">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <subjects>
+        <stateMoniker name="//StatePhoneIdle" />
+        <stateMoniker name="//StatePhoneRings" />
+      </subjects>
+    </comment>
+    <comment Id="9dd8bfb8-aa49-4c88-9d29-f258e9776ee8">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+    </comment>
+  </comments>
+  <flowElements>
+    <state name="StatePhoneIdle" entryActionLabel="entry/" exitActionLabel="exit/">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <flowTo>
+        <flow eventAndGuardLabel="/" effectLabel="" eventGuardEffectLabel="">
+          <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <stateMoniker name="//StatePhoneRings" />
+        </flow>
+      </flowTo>
+    </state>
+    <state name="StatePhoneRings" entryActionLabel="entry/" exitActionLabel="exit/">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <flowTo>
+        <flow eventAndGuardLabel="/" effectLabel="" eventGuardEffectLabel="">
+          <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <stateMoniker name="//State1" />
+        </flow>
+        <flow eventAndGuardLabel="/" effectLabel="" eventGuardEffectLabel="">
+          <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <stateMoniker name="//StatePhoneIdle" />
+        </flow>
+      </flowTo>
+    </state>
+    <startPoint name="StartPoint1">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <flowTo>
+        <flow eventAndGuardLabel="/" effectLabel="" eventGuardEffectLabel="">
+          <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <stateMoniker name="//StatePhoneIdle" />
+        </flow>
+      </flowTo>
+    </startPoint>
+    <state name="State1" entryActionLabel="entry/" exitActionLabel="exit/">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <flowTo>
+        <flow eventAndGuardLabel="/" effectLabel="" eventGuardEffectLabel="">
+          <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <stateMoniker name="//StatePhoneIdle" />
+        </flow>
+      </flowTo>
+    </state>
+  </flowElements>
+</stateGraph>

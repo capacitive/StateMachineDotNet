@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="836e0a7a-f6fe-45d8-a2df-983b1059ef1b" name="Phone" linkedPackageId="6983a082-7050-46f2-994d-44075ec5c177" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="46c675a1-cce9-425d-9917-6177b501fb44" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="cb82a5c1-9115-4b55-bbae-0d96b6b44f27" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="89463cd3-b0b6-413c-ac51-51c0e2cad33a">
+          <propertyInstance Id="35a13710-7ab7-41b0-9b5d-2942f9bc2443" name="BaseName">
+            <elementDefinition Id="25515764-3d8c-45d8-8506-3a1bc7627f21" />
+          </propertyInstance>
+          <elementDefinition Id="102414bc-49e7-43be-aeaa-38a240c37e01" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="dc724320-9b90-473f-b61f-55c5ea0a220d">
+          <propertyInstance Id="f645b371-5ec6-4854-8b72-e3d646fae8e9" name="ClrAttributes">
+            <elementDefinition Id="dcad9c05-3af2-484f-b563-5edc1e34b945" />
+          </propertyInstance>
+          <elementDefinition Id="20884394-a1b6-460e-8143-2325768f3005" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="af9ebaca-ddb0-48ef-81f9-826686093a99">
+          <propertyInstance Id="cdeb95b4-db52-4e2b-bc79-3bfab11e850a" name="Usings">
+            <elementDefinition Id="f9c7e349-1218-41ab-86d2-a739c9c816d4" />
+          </propertyInstance>
+          <elementDefinition Id="25e43c7b-1d60-45c7-a6b1-08cdebad379b" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="20511589-f45f-43df-9173-6d2461476568">
+      <profileInstance Id="07715257-2e44-4b4f-a8db-f2990bcbb33f" name="CSharpProfile">
+        <elementDefinition Id="0585886c-9151-4618-b8ff-d4a070696341" />
+      </profileInstance>
+      <elementDefinition Id="14ccb6a3-f25a-4123-a9f6-aacfd84c4a06" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="b98dfa2f-6268-4963-aef7-29067a2df72b" name="Phone" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="eff72293-3089-40e6-8a8b-23cc94564725" />
+        <nodes>
+          <initialNode Id="e4172159-48ba-49cd-be08-427de6eae552" name="Initial1" isLeaf="false">
+            <elementDefinition Id="b0d8d6d3-6015-438a-9003-40756ea84fb4" />
+            <objectFlowTargets>
+              <objectFlow Id="2c726914-75d7-4110-b869-ea41ab810ebb" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="943fb44f-dde5-4087-b770-2f09aa1dca9e" LastKnownName="init" />
+                <elementDefinition Id="3a235596-0e0c-49ea-aad4-ee8e4b80dd00" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <opaqueAction Id="b83bcf38-fe6a-497b-a8d6-936928637d63" name="TransitionIncomingCall" isLeaf="false">
+            <elementDefinition Id="a69c4f9a-b3fb-4e84-8831-98a0d139b49f" />
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="015e071b-8f91-4ffd-9a9a-53bff0687d56" name="TriggerOnlineExternalActive" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="d12c1827-9bf5-40a6-8578-61a2ddf1fa6f" />
+                  <upperBound>
+                    <literalInteger Id="9dccd03d-5b6c-4de7-9a84-f92f8452f4fb" name="2147483647" value="2147483647">
+                      <elementDefinition Id="3d480ae0-4898-4296-b392-782c6ebe1ad8" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="7997d656-4251-4cdb-998b-99518938a11c" name="ActionViewPhoneRings" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="9881a8c1-efd1-42ff-a47e-b9db87713e03" />
+                  <objectFlowTargets>
+                    <objectFlow Id="cbb22f36-15e4-40b7-8aca-fa4f60f2ae64" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="625fcc81-87d3-4cff-b7f7-ef1cad81a4e3" LastKnownName="EntryActionBellRing" />
+                      <elementDefinition Id="b40612b5-847e-43cf-83ba-2c4a38bf630e" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="31345a33-13e2-496d-bc87-ec9aa3b74dca" name="2147483647" value="2147483647">
+                      <elementDefinition Id="af86a2b2-4152-4672-b2bc-b76fff59df2e" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="8baf11f8-c2ad-49e1-9530-faaa4c878f4c" name="TransitionCallBlocked" isLeaf="false">
+            <elementDefinition Id="ff1fc7f6-1420-4ef7-968b-6e101a86a9e7" />
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="e401ab7c-92e1-486f-8518-1bf00a495e45" name="TriggerOnReceiverDown" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="a922070e-59b4-40d4-ab4a-4f2b7f002d61" />
+                  <upperBound>
+                    <literalInteger Id="8985e361-6992-4d70-8045-a03fe8b6d5c6" name="2147483647" value="2147483647">
+                      <elementDefinition Id="b69d22a2-3bdf-43b2-a722-f0a5c8dce5cc" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="0731e6bc-b012-4648-9054-7c6d1c6d7da1" name="ActionViewIdle" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="41414165-4f4a-4278-92cd-ad094c8a84cf" />
+                  <objectFlowTargets>
+                    <objectFlow Id="c9d24179-b5dc-42c4-ae0f-510031d6bbe1" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="ca7dbf43-f536-445e-bf8e-b177671081be" LastKnownName="Input2" />
+                      <elementDefinition Id="d9582c30-ae3c-4e54-82e1-539747881715" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="635585de-8ded-4ea9-9f69-07329b733b76" name="2147483647" value="2147483647">
+                      <elementDefinition Id="c81c2b6e-9806-4c5b-8aed-edc1b892b764" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="7b8284ac-f30c-4a06-b677-a06630309141" name="TransitionCallAccepted" isLeaf="false">
+            <elementDefinition Id="78b12815-7c8c-452f-9ad5-8584e82b77f0" />
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="06416ac1-b487-419f-9a5b-fb19c07098a0" name="TriggerOnReceiverUp" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="feeb156f-1cb8-47da-8b38-b27ccda31a53" />
+                  <upperBound>
+                    <literalInteger Id="001f65ef-54b6-4141-9e90-9840fdf99e80" name="2147483647" value="2147483647">
+                      <elementDefinition Id="e0d0f157-a675-4876-8fe1-633af5b33652" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="58c47cd5-40dc-44b8-9ec9-13b89749a233" name="ActionViewTalking" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="d25f7ab6-5846-40c2-928c-730b01ed2a95" />
+                  <objectFlowTargets>
+                    <objectFlow Id="5520fe60-c5ad-46d5-bcff-93a432bd8270" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="86f6e292-9530-4153-b9e4-cecb613d7ae7" LastKnownName="EntryActionLineInternalActive" />
+                      <elementDefinition Id="ae0c3f5c-2d67-4513-a621-0ba39bcd3a52" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="38c8fe41-470e-49e6-8209-16d97ccb3760" name="2147483647" value="2147483647">
+                      <elementDefinition Id="106a6151-0b54-46f4-981c-a78561ee96ce" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <callBehaviorAction Id="5141db14-bdbd-4814-b505-e22fb5c5336c" name="StatePhoneRings" isLeaf="false">
+            <elementDefinition Id="7e7072de-8e61-486c-8f63-928471e81b1c" />
+            <pins>
+              <invocationActionHasArguments>
+                <inputPin Id="625fcc81-87d3-4cff-b7f7-ef1cad81a4e3" name="EntryActionBellRing" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="a0208ab6-4249-490f-b106-62ceff96c922" />
+                  <upperBound>
+                    <literalInteger Id="657ec27e-0289-4015-8731-485fc1386f60" name="2147483647" value="2147483647">
+                      <elementDefinition Id="226b3846-d065-4db0-be08-3257452667f8" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </invocationActionHasArguments>
+              <callActionHasResults>
+                <outputPin Id="cc95b83f-cacd-40a6-b13b-f3201ce5263c" name="ExitActionBellSilent" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="4f2cd1be-f178-4926-8b9b-931d9b69a8bf" />
+                  <objectFlowTargets>
+                    <objectFlow Id="0a238b7b-a95a-42b4-acdc-ca1452487770" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="e401ab7c-92e1-486f-8518-1bf00a495e45" LastKnownName="TriggerOnReceiverDown" />
+                      <elementDefinition Id="18c7193f-d643-4bd5-8035-31424d35552e" />
+                    </objectFlow>
+                    <objectFlow Id="d170d1a7-1d70-4650-9c4a-b752f86e2f13" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="06416ac1-b487-419f-9a5b-fb19c07098a0" LastKnownName="TriggerOnReceiverUp" />
+                      <elementDefinition Id="9017a895-df4f-46bc-8bee-e8d3c2ec966a" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="ac60fec9-a339-4c3e-9f14-e27f477021ca" name="2147483647" value="2147483647">
+                      <elementDefinition Id="80c48b84-9d2b-4c7d-a389-e5327d15b742" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </callActionHasResults>
+            </pins>
+          </callBehaviorAction>
+          <callBehaviorAction Id="ad1ba985-796d-48c9-b754-fe529674aaaf" name="StatePhoneIdle" isLeaf="false">
+            <elementDefinition Id="34a70f52-83ff-4081-802b-56d07bc0cadd" />
+            <pins>
+              <invocationActionHasArguments>
+                <inputPin Id="943fb44f-dde5-4087-b770-2f09aa1dca9e" name="init" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="fc095488-bba6-472c-abc5-0e00e39230c4" />
+                  <upperBound>
+                    <literalInteger Id="3d501c86-a263-4b19-b47b-7a26d9352c80" name="2147483647" value="2147483647">
+                      <elementDefinition Id="5c87375f-c9c9-41a3-9096-3d286c4b0acc" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </invocationActionHasArguments>
+              <callActionHasResults>
+                <outputPin Id="66418b67-c917-40cd-a5d0-1792c6b3c73d" name="Output1" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="70517413-9513-4848-8965-067f1db28950" />
+                  <objectFlowTargets>
+                    <objectFlow Id="639fcb35-0c52-4692-83e1-ba9513bca7b8" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="015e071b-8f91-4ffd-9a9a-53bff0687d56" LastKnownName="TriggerOnlineExternalActive" />
+                      <elementDefinition Id="73808fa6-b0fc-4bf9-88b6-fcd789c68185" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="41ca6d53-0103-4260-a434-29601b431ad5" name="2147483647" value="2147483647">
+                      <elementDefinition Id="7be4e0a7-75c8-4eff-a598-9d706f84ad4f" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </callActionHasResults>
+              <invocationActionHasArguments>
+                <inputPin Id="ca7dbf43-f536-445e-bf8e-b177671081be" name="Input2" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="559f4d31-28d9-4ebd-8395-c85240716076" />
+                  <upperBound>
+                    <literalInteger Id="9375ebac-5c35-4f35-b1c4-b3906972f48f" name="2147483647" value="2147483647">
+                      <elementDefinition Id="5442af2e-3442-49e2-810a-c26ba118f537" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </invocationActionHasArguments>
+            </pins>
+          </callBehaviorAction>
+          <callBehaviorAction Id="1f290225-6409-4351-8117-f3a6e3c2228e" name="StateTalking" isLeaf="false">
+            <elementDefinition Id="2fc31631-15f5-4377-866b-69f22ca9a7b7" />
+            <pins>
+              <invocationActionHasArguments>
+                <inputPin Id="86f6e292-9530-4153-b9e4-cecb613d7ae7" name="EntryActionLineInternalActive" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="68bfd473-122d-4ad5-97a9-5ee6be8ebe00" />
+                  <upperBound>
+                    <literalInteger Id="a15c8280-f855-4aad-b82d-e5ac58c8f084" name="2147483647" value="2147483647">
+                      <elementDefinition Id="a71ceae8-7985-4d2e-a8f0-d63416c673c2" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </invocationActionHasArguments>
+              <callActionHasResults>
+                <outputPin Id="7e4f9a69-d75e-4067-a9a1-fff7a1a4b646" name="ExitActionLineInternalOff" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="d89e359f-eb6f-4a58-b15a-de2318c4f0a4" />
+                  <objectFlowTargets>
+                    <objectFlow Id="0c183a71-d5fd-4ba6-891d-27722c771866" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="e4e2da38-53b1-4153-b22b-be9a57166652" LastKnownName="TriggerOnReceiverDown" />
+                      <elementDefinition Id="631d77cc-e2ca-45aa-aebd-67006e4aea3b" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="ec3a1668-d02b-4ad7-80d3-23f70219bf3c" name="2147483647" value="2147483647">
+                      <elementDefinition Id="03069dee-b2da-4096-b20b-3cf1ef6113a3" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </callActionHasResults>
+            </pins>
+          </callBehaviorAction>
+          <opaqueAction Id="7dbe6d17-b779-48c3-8306-6c9e347762c9" name="TransitionCallEnded" isLeaf="false">
+            <elementDefinition Id="bd5c5437-883b-4e68-9c40-d90a87ce57af" />
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="e4e2da38-53b1-4153-b22b-be9a57166652" name="TriggerOnReceiverDown" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="755efacc-f6c4-4a33-8f8f-c9e6f7d8ac7f" />
+                  <upperBound>
+                    <literalInteger Id="b09f8e4f-8103-4781-bba9-288b9d42f933" name="2147483647" value="2147483647">
+                      <elementDefinition Id="95263165-7031-4ccf-9967-f10e03af514d" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="7f07f4cd-790a-4b1a-bd16-44aa8be8b404" name="ActionViewIdle" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="ba4e9819-8a70-454a-89da-70a7e452e5dc" />
+                  <objectFlowTargets>
+                    <objectFlow Id="968212f6-a492-484f-b4d5-b7490fc90224" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="ca7dbf43-f536-445e-bf8e-b177671081be" LastKnownName="Input2" />
+                      <elementDefinition Id="c1b8a2a5-57ce-4741-86fc-92a3c3078ada" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="edc3bd5b-482c-4dba-a7bd-54c82e8094a2" name="2147483647" value="2147483647">
+                      <elementDefinition Id="379482d0-d04e-461a-9c8a-e73bb609a2b9" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="6983a082-7050-46f2-994d-44075ec5c177" name="PhoneStateMachineModel">
+    <elementDefinition Id="b10d856a-9cf0-4d3c-933c-a91c12bdcba5" />
+  </package>
+</activityRootModel>

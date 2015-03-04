@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stateDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Phone">
+  <stateGraphMoniker name="/" />
+  <nestedChildShapes>
+    <stateShape Id="4b1c4605-08f0-4cc9-a716-c687706327be" absoluteBounds="1.75, 2.52, 1.2, 0.35" fillColor="WhiteSmoke">
+      <stateMoniker name="//StatePhoneIdle" />
+    </stateShape>
+    <startShape Id="8c1bdafe-e4a9-481b-8b7b-1ca42b94948f" absoluteBounds="2.27, 0.58, 0.25, 0.25">
+      <startPointMoniker name="//StartPoint1" />
+    </startShape>
+    <stateShape Id="01a1ae6a-e329-440c-aba2-a42a05085bd5" absoluteBounds="9.24, 2.5500000000000003, 1.2, 0.35" fillColor="WhiteSmoke">
+      <stateMoniker name="//StatePhoneRings" />
+    </stateShape>
+    <commentBoxShape Id="1c1d4fb7-5d19-4342-ac90-3434f59938bf" absoluteBounds="5.73, 1.08, 1.5099999999999998, 0.90999999999999992">
+      <commentMoniker Id="b729b7db-1ccc-4068-9063-373d80833290" />
+    </commentBoxShape>
+    <stateShape Id="2544c11c-9f4b-4a44-97a8-5d6ab77e3ac6" absoluteBounds="5.83, 5.42, 1.2, 0.35" fillColor="WhiteSmoke">
+      <stateMoniker name="//State1" />
+    </stateShape>
+    <flowConnector edgePoints="[(2.395 : 0.83); (2.395 : 2.52)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="69f16fc9-4419-4490-bd98-50e80f7e15aa">
+      <relativeChildShapes />
+      <nodes>
+        <startShapeMoniker Id="8c1bdafe-e4a9-481b-8b7b-1ca42b94948f" />
+        <stateShapeMoniker Id="4b1c4605-08f0-4cc9-a716-c687706327be" />
+      </nodes>
+    </flowConnector>
+    <flowConnector edgePoints="[(2.95 : 2.78812625); (9.24 : 2.78812625)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="69f16fc9-4419-4490-bd98-50e80f7e15aa">
+      <relativeChildShapes />
+      <nodes>
+        <stateShapeMoniker Id="4b1c4605-08f0-4cc9-a716-c687706327be" />
+        <stateShapeMoniker Id="01a1ae6a-e329-440c-aba2-a42a05085bd5" />
+      </nodes>
+    </flowConnector>
+    <commentConnector edgePoints="[(5.73 : 1.99); (2.95 : 2.52)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="f4e741cd-da2a-4895-8964-b1b880152b85">
+      <nodes>
+        <commentBoxShapeMoniker Id="1c1d4fb7-5d19-4342-ac90-3434f59938bf" />
+        <stateShapeMoniker Id="4b1c4605-08f0-4cc9-a716-c687706327be" />
+      </nodes>
+    </commentConnector>
+    <commentConnector edgePoints="[(7.24 : 1.99); (9.24 : 2.55)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="f4e741cd-da2a-4895-8964-b1b880152b85">
+      <nodes>
+        <commentBoxShapeMoniker Id="1c1d4fb7-5d19-4342-ac90-3434f59938bf" />
+        <stateShapeMoniker Id="01a1ae6a-e329-440c-aba2-a42a05085bd5" />
+      </nodes>
+    </commentConnector>
+    <flowConnector edgePoints="[(9.84 : 2.9); (9.84 : 5.595); (7.03 : 5.595)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="69f16fc9-4419-4490-bd98-50e80f7e15aa">
+      <relativeChildShapes />
+      <nodes>
+        <stateShapeMoniker Id="01a1ae6a-e329-440c-aba2-a42a05085bd5" />
+        <stateShapeMoniker Id="2544c11c-9f4b-4a44-97a8-5d6ab77e3ac6" />
+      </nodes>
+    </flowConnector>
+    <flowConnector edgePoints="[(5.83 : 5.595); (2.31003605769231 : 5.595); (2.31003605769231 : 2.87)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Caller" TargetRelationshipDomainClassId="69f16fc9-4419-4490-bd98-50e80f7e15aa">
+      <relativeChildShapes />
+      <nodes>
+        <stateShapeMoniker Id="2544c11c-9f4b-4a44-97a8-5d6ab77e3ac6" />
+        <stateShapeMoniker Id="4b1c4605-08f0-4cc9-a716-c687706327be" />
+      </nodes>
+    </flowConnector>
+    <flowConnector edgePoints="[(9.24 : 2.5812525); (2.95 : 2.5812525)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="69f16fc9-4419-4490-bd98-50e80f7e15aa">
+      <relativeChildShapes />
+      <nodes>
+        <stateShapeMoniker Id="01a1ae6a-e329-440c-aba2-a42a05085bd5" />
+        <stateShapeMoniker Id="4b1c4605-08f0-4cc9-a716-c687706327be" />
+      </nodes>
+    </flowConnector>
+    <commentBoxShape Id="2b44f0b8-94a8-44cd-9951-e1c2be6f2cd9" absoluteBounds="5.71, 3.5, 1.5, 1.04">
+      <commentMoniker Id="9dd8bfb8-aa49-4c88-9d29-f258e9776ee8" />
+    </commentBoxShape>
+  </nestedChildShapes>
+</stateDiagram>
