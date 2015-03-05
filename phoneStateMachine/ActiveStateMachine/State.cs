@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ActiveStateMachine
 {
-    class State
+    public class State
     {
         public string StateName { get; private set; }
         public Dictionary<string, Transition> StateTransitionList { get; private set; }

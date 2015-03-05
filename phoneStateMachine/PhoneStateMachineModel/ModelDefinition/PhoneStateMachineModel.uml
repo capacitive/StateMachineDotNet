@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="b10d856a-9cf0-4d3c-933c-a91c12bdcba5"
   name="PhoneStateMachineModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -75,7 +75,7 @@
               <opaqueActionHasInputValues>
                 <inputPin
                   Id="d12c1827-9bf5-40a6-8578-61a2ddf1fa6f"
-                  name="TriggerOnlineExternalActive"
+                  name="Trigger: OnlineExternalActive"
                   isLeaf="false"
                   ordering="Unordered"
                   isControlType="false"
@@ -104,7 +104,7 @@
                       isMultireceive="false">
                       <inputPinMoniker
                         Id="a0208ab6-4249-490f-b106-62ceff96c922"
-                        LastKnownName="EntryActionBellRing"
+                        LastKnownName="Entry: ActionBellRings"
                         LastKnownLocation="PhoneStateMachineModel.uml" />
                     </objectFlow>
                   </objectFlowTargets>
@@ -126,7 +126,7 @@
               <opaqueActionHasInputValues>
                 <inputPin
                   Id="a922070e-59b4-40d4-ab4a-4f2b7f002d61"
-                  name="TriggerOnReceiverDown"
+                  name="Trigger: OnReceiverDown"
                   isLeaf="false"
                   ordering="Unordered"
                   isControlType="false"
@@ -155,7 +155,6 @@
                       isMultireceive="false">
                       <inputPinMoniker
                         Id="559f4d31-28d9-4ebd-8395-c85240716076"
-                        LastKnownName="Input2"
                         LastKnownLocation="PhoneStateMachineModel.uml" />
                     </objectFlow>
                   </objectFlowTargets>
@@ -177,7 +176,7 @@
               <opaqueActionHasInputValues>
                 <inputPin
                   Id="feeb156f-1cb8-47da-8b38-b27ccda31a53"
-                  name="TriggerOnReceiverUp"
+                  name="Trigger: OnReceiverUp"
                   isLeaf="false"
                   ordering="Unordered"
                   isControlType="false"
@@ -206,7 +205,7 @@
                       isMultireceive="false">
                       <inputPinMoniker
                         Id="68bfd473-122d-4ad5-97a9-5ee6be8ebe00"
-                        LastKnownName="EntryActionLineInternalActive"
+                        LastKnownName="Entry: ActionLineInternalActive"
                         LastKnownLocation="PhoneStateMachineModel.uml" />
                     </objectFlow>
                   </objectFlowTargets>
@@ -228,7 +227,7 @@
               <invocationActionHasArguments>
                 <inputPin
                   Id="a0208ab6-4249-490f-b106-62ceff96c922"
-                  name="EntryActionBellRing"
+                  name="Entry: ActionBellRings"
                   isLeaf="false"
                   ordering="Unordered"
                   isControlType="false"
@@ -244,7 +243,7 @@
               <callActionHasResults>
                 <outputPin
                   Id="4f2cd1be-f178-4926-8b9b-931d9b69a8bf"
-                  name="ExitActionBellSilent"
+                  name="Exit: ActionBellSilent"
                   isLeaf="false"
                   ordering="Unordered"
                   isControlType="false"
@@ -257,7 +256,7 @@
                       isMultireceive="false">
                       <inputPinMoniker
                         Id="a922070e-59b4-40d4-ab4a-4f2b7f002d61"
-                        LastKnownName="TriggerOnReceiverDown"
+                        LastKnownName="Trigger: OnReceiverDown"
                         LastKnownLocation="PhoneStateMachineModel.uml" />
                     </objectFlow>
                     <objectFlow
@@ -267,7 +266,7 @@
                       isMultireceive="false">
                       <inputPinMoniker
                         Id="feeb156f-1cb8-47da-8b38-b27ccda31a53"
-                        LastKnownName="TriggerOnReceiverUp"
+                        LastKnownName="Trigger: OnReceiverUp"
                         LastKnownLocation="PhoneStateMachineModel.uml" />
                     </objectFlow>
                   </objectFlowTargets>
@@ -305,7 +304,6 @@
               <callActionHasResults>
                 <outputPin
                   Id="70517413-9513-4848-8965-067f1db28950"
-                  name="Output1"
                   isLeaf="false"
                   ordering="Unordered"
                   isControlType="false"
@@ -318,7 +316,7 @@
                       isMultireceive="false">
                       <inputPinMoniker
                         Id="d12c1827-9bf5-40a6-8578-61a2ddf1fa6f"
-                        LastKnownName="TriggerOnlineExternalActive"
+                        LastKnownName="Trigger: OnlineExternalActive"
                         LastKnownLocation="PhoneStateMachineModel.uml" />
                     </objectFlow>
                   </objectFlowTargets>
@@ -333,7 +331,6 @@
               <invocationActionHasArguments>
                 <inputPin
                   Id="559f4d31-28d9-4ebd-8395-c85240716076"
-                  name="Input2"
                   isLeaf="false"
                   ordering="Unordered"
                   isControlType="false"
@@ -356,7 +353,7 @@
               <invocationActionHasArguments>
                 <inputPin
                   Id="68bfd473-122d-4ad5-97a9-5ee6be8ebe00"
-                  name="EntryActionLineInternalActive"
+                  name="Entry: ActionLineInternalActive"
                   isLeaf="false"
                   ordering="Unordered"
                   isControlType="false"
@@ -372,7 +369,7 @@
               <callActionHasResults>
                 <outputPin
                   Id="d89e359f-eb6f-4a58-b15a-de2318c4f0a4"
-                  name="ExitActionLineInternalOff"
+                  name="Exit: ActionLineInternalOff"
                   isLeaf="false"
                   ordering="Unordered"
                   isControlType="false"
@@ -385,7 +382,7 @@
                       isMultireceive="false">
                       <inputPinMoniker
                         Id="755efacc-f6c4-4a33-8f8f-c9e6f7d8ac7f"
-                        LastKnownName="TriggerOnReceiverDown"
+                        LastKnownName="Trigger: OnReceiverDown"
                         LastKnownLocation="PhoneStateMachineModel.uml" />
                     </objectFlow>
                   </objectFlowTargets>
@@ -407,7 +404,7 @@
               <opaqueActionHasInputValues>
                 <inputPin
                   Id="755efacc-f6c4-4a33-8f8f-c9e6f7d8ac7f"
-                  name="TriggerOnReceiverDown"
+                  name="Trigger: OnReceiverDown"
                   isLeaf="false"
                   ordering="Unordered"
                   isControlType="false"
@@ -436,7 +433,6 @@
                       isMultireceive="false">
                       <inputPinMoniker
                         Id="559f4d31-28d9-4ebd-8395-c85240716076"
-                        LastKnownName="Input2"
                         LastKnownLocation="PhoneStateMachineModel.uml" />
                     </objectFlow>
                   </objectFlowTargets>

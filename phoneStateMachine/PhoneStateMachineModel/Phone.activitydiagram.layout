@@ -9,8 +9,11 @@
       <opaqueActionMoniker Id="b83bcf38-fe6a-497b-a8d6-936928637d63" LastKnownName="TransitionIncomingCall" />
       <relativeChildShapes>
         <inputPinShape Id="9a34d301-30e0-4e54-92cf-5ac0b90b234a" absoluteBounds="6.1, 1.53125, 0.15, 0.15">
-          <inputPinMoniker Id="015e071b-8f91-4ffd-9a9a-53bff0687d56" LastKnownName="TriggerOnlineExternalActive" />
+          <inputPinMoniker Id="015e071b-8f91-4ffd-9a9a-53bff0687d56" LastKnownName="Trigger: OnlineExternalActive" />
           <relativeChildShapes />
+          <moveableDecoratorHostShapes>
+            <moveableDecoratorHostShape manuallySized="true" absoluteBounds="4.59125, 1.3232465410232543, 1.5414857864379883, 0.14800345897674561" shapeFieldName="Name" />
+          </moveableDecoratorHostShapes>
         </inputPinShape>
         <outputPinShape Id="d9166a4a-74b3-4837-800a-fd5e83286fd4" absoluteBounds="7.875, 1.53125, 0.15, 0.15">
           <outputPinMoniker Id="7997d656-4251-4cdb-998b-99518938a11c" LastKnownName="ActionViewPhoneRings" />
@@ -22,7 +25,7 @@
       <opaqueActionMoniker Id="8baf11f8-c2ad-49e1-9530-faaa4c878f4c" LastKnownName="TransitionCallBlocked" />
       <relativeChildShapes>
         <inputPinShape Id="bb3498a3-f2d5-4027-8b4a-00ad50fb9e59" absoluteBounds="7.75, 4.03125, 0.15, 0.15">
-          <inputPinMoniker Id="e401ab7c-92e1-486f-8518-1bf00a495e45" LastKnownName="TriggerOnReceiverDown" />
+          <inputPinMoniker Id="e401ab7c-92e1-486f-8518-1bf00a495e45" LastKnownName="Trigger: OnReceiverDown" />
           <relativeChildShapes />
         </inputPinShape>
         <outputPinShape Id="9bc8a0a4-a1c8-400d-95ec-045ee288c0f3" absoluteBounds="6.225, 4.03125, 0.15, 0.15">
@@ -35,10 +38,10 @@
       <opaqueActionMoniker Id="7b8284ac-f30c-4a06-b677-a06630309141" LastKnownName="TransitionCallAccepted" />
       <relativeChildShapes>
         <inputPinShape Id="365d37fd-9b12-4cf0-aae5-57fb541bbebd" absoluteBounds="10.125, 5.40625, 0.15, 0.15">
-          <inputPinMoniker Id="06416ac1-b487-419f-9a5b-fb19c07098a0" LastKnownName="TriggerOnReceiverUp" />
+          <inputPinMoniker Id="06416ac1-b487-419f-9a5b-fb19c07098a0" LastKnownName="Trigger: OnReceiverUp" />
           <relativeChildShapes />
           <moveableDecoratorHostShapes>
-            <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="10.1875, 5.15625, 1.1111471652984619, 0.14800345897674561" shapeFieldName="Name" />
+            <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="10.149386942386627, 5.15625, 1.1873732805252075, 0.14800345897674561" shapeFieldName="Name" />
           </moveableDecoratorHostShapes>
         </inputPinShape>
         <outputPinShape Id="c5b04931-87a8-4abf-81b6-6dc5f53dbbf1" absoluteBounds="8.475, 5.4375, 0.15, 0.15">
@@ -54,14 +57,14 @@
       <callBehaviorActionMoniker Id="5141db14-bdbd-4814-b505-e22fb5c5336c" LastKnownName="StatePhoneRings" />
       <relativeChildShapes>
         <inputPinShape Id="7ba5bae5-bf96-4c43-92ba-47e423809b01" absoluteBounds="11.28125, 3.225, 0.15, 0.15">
-          <inputPinMoniker Id="625fcc81-87d3-4cff-b7f7-ef1cad81a4e3" LastKnownName="EntryActionBellRing" />
+          <inputPinMoniker Id="625fcc81-87d3-4cff-b7f7-ef1cad81a4e3" LastKnownName="Entry: ActionBellRings" />
           <relativeChildShapes />
         </inputPinShape>
         <outputPinShape Id="5c292b40-b545-4ea4-ad51-afd90da92cb0" absoluteBounds="11.28125, 3.875, 0.15, 0.15">
-          <outputPinMoniker Id="cc95b83f-cacd-40a6-b13b-f3201ce5263c" LastKnownName="ExitActionBellSilent" />
+          <outputPinMoniker Id="cc95b83f-cacd-40a6-b13b-f3201ce5263c" LastKnownName="Exit: ActionBellSilent" />
           <relativeChildShapes />
           <moveableDecoratorHostShapes>
-            <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="11.5, 4.03125, 0.99244064092636108, 0.14800345897674561" shapeFieldName="Name" />
+            <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="11.5, 4.03125, 1.5236906409263611, 0.14800345897674561" shapeFieldName="Name" />
           </moveableDecoratorHostShapes>
         </outputPinShape>
       </relativeChildShapes>
@@ -82,11 +85,11 @@
           <relativeChildShapes />
         </inputPinShape>
         <outputPinShape Id="42a20c9a-8636-48cf-843b-9fa2e6c85bae" absoluteBounds="3.4375, 2.975, 0.15, 0.15">
-          <outputPinMoniker Id="66418b67-c917-40cd-a5d0-1792c6b3c73d" LastKnownName="Output1" />
+          <outputPinMoniker Id="66418b67-c917-40cd-a5d0-1792c6b3c73d" />
           <relativeChildShapes />
         </outputPinShape>
         <inputPinShape Id="343fce9a-48a9-45d6-9f90-73b7660a6619" absoluteBounds="3.375, 3.625, 0.15, 0.15">
-          <inputPinMoniker Id="ca7dbf43-f536-445e-bf8e-b177671081be" LastKnownName="Input2" />
+          <inputPinMoniker Id="ca7dbf43-f536-445e-bf8e-b177671081be" />
           <relativeChildShapes />
         </inputPinShape>
       </relativeChildShapes>
@@ -103,12 +106,18 @@
       <callBehaviorActionMoniker Id="1f290225-6409-4351-8117-f3a6e3c2228e" LastKnownName="StateTalking" />
       <relativeChildShapes>
         <inputPinShape Id="3b02ee35-4d4d-42b8-a7b5-f645765107b8" absoluteBounds="6.625, 5.85, 0.15, 0.15">
-          <inputPinMoniker Id="86f6e292-9530-4153-b9e4-cecb613d7ae7" LastKnownName="EntryActionLineInternalActive" />
+          <inputPinMoniker Id="86f6e292-9530-4153-b9e4-cecb613d7ae7" LastKnownName="Entry: ActionLineInternalActive" />
           <relativeChildShapes />
+          <moveableDecoratorHostShapes>
+            <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="6.84375, 5.6875, 1.5961190462112427, 0.14800345897674561" shapeFieldName="Name" />
+          </moveableDecoratorHostShapes>
         </inputPinShape>
         <outputPinShape Id="2ddbd612-94b6-45a3-8623-3cbd1b72734c" absoluteBounds="6.59375, 6.5, 0.15, 0.15">
-          <outputPinMoniker Id="7e4f9a69-d75e-4067-a9a1-fff7a1a4b646" LastKnownName="ExitActionLineInternalOff" />
+          <outputPinMoniker Id="7e4f9a69-d75e-4067-a9a1-fff7a1a4b646" LastKnownName="Exit: ActionLineInternalOff" />
           <relativeChildShapes />
+          <moveableDecoratorHostShapes>
+            <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="5.15625, 6.65625, 1.3676034212112427, 0.14800345897674561" shapeFieldName="Name" />
+          </moveableDecoratorHostShapes>
         </outputPinShape>
       </relativeChildShapes>
     </callBehaviorActionShape>
@@ -156,7 +165,7 @@
       <opaqueActionMoniker Id="7dbe6d17-b779-48c3-8306-6c9e347762c9" LastKnownName="TransitionCallEnded" />
       <relativeChildShapes>
         <inputPinShape Id="c6cf387d-6c94-4c32-a0ea-b1bcf5682d32" absoluteBounds="3.5, 5.4375, 0.15, 0.15">
-          <inputPinMoniker Id="e4e2da38-53b1-4153-b22b-be9a57166652" LastKnownName="TriggerOnReceiverDown" />
+          <inputPinMoniker Id="e4e2da38-53b1-4153-b22b-be9a57166652" LastKnownName="Trigger: OnReceiverDown" />
           <relativeChildShapes />
         </inputPinShape>
         <outputPinShape Id="b1595688-b43d-4d23-a529-16dfa2785249" absoluteBounds="2.1, 5.4375, 0.15, 0.15">
