@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ApplicationServices")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("SOA for state machines")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ApplicationServices")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCompany("Capacitive Technologies Inc.")]
+[assembly: AssemblyProduct("Capice.ApplicationServices")]
+[assembly: AssemblyCopyright("Copyright © 2015 Capacitive Technologies Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

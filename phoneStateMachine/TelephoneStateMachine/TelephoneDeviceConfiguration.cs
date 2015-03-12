@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using ApplicationServices;
-using Common;
+using Capiche.ApplicationServices;
+using Capiche.Common;
 
 namespace TelephoneStateMachine
 {

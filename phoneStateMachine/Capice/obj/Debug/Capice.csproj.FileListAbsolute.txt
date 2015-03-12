@@ -1,0 +1,11 @@
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\bin\Debug\Capice.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\bin\Debug\Capice.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\bin\Debug\ActiveStateMachine.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\bin\Debug\Capice.ApplicationServices.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\bin\Debug\Common.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\bin\Debug\ActiveStateMachine.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\bin\Debug\Capice.ApplicationServices.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\bin\Debug\Common.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\obj\Debug\Capice.csprojResolveAssemblyReference.cache
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\obj\Debug\Capice.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\obj\Debug\Capice.pdb

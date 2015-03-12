@@ -1,5 +1,5 @@
 ﻿using System;
-using ApplicationServices;
+using Capiche.ApplicationServices;
 
 namespace TelephoneStateMachine
 {
@@ -10,8 +10,16 @@ namespace TelephoneStateMachine
         #region device functions
         public void Rings()
         {
-            Ringing = true;
-            System.Media.SystemSounds.Hand.Play();
+            try
+            {
+                throw (new SystemException("OnBellBroken"));
+                Ringing = true;
+                System.Media.SystemSounds.Hand.Play();
+            }
+            catch (Exception exc)
+            {
+                DoNotificationCallback(exc.Message == "OnBellBroken" ? "OnBellBroken" : "CompleteFailure", exc.Message, "Bell");
+            }
         }
 
         public void Silent()

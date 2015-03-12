@@ -1,5 +1,5 @@
 ﻿using System;
-using Common;
+using Capiche.Common;
 
 namespace TelephoneStateMachine
 {
@@ -46,7 +46,12 @@ namespace TelephoneStateMachine
         public void ActionViewTalking()
         {
             RaiseTelephoneUIEvent("ViewTalking");
-        } 
+        }
+
+        public void ActionErrorPhoneRings()
+        {
+            RaiseTelephoneUIEvent("ViewErrorPhoneRings");
+        }
         #endregion
 
         #region event methods

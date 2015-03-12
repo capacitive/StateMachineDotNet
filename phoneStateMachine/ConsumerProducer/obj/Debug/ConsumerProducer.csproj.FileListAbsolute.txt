@@ -5,3 +5,6 @@ c:\users\mark\documents\visual studio 2013\Projects\PhoneStateMachine\ConsumerPr
 c:\users\mark\documents\visual studio 2013\Projects\PhoneStateMachine\ConsumerProducer\obj\Debug\ConsumerProducer.pdb
 C:\_repo\StateMachineDotNet\phoneStateMachine\ConsumerProducer\obj\Debug\ConsumerProducer.exe
 C:\_repo\StateMachineDotNet\phoneStateMachine\ConsumerProducer\obj\Debug\ConsumerProducer.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\ConsumerProducer\bin\Debug\ConsumerProducer.exe
+C:\_repo\StateMachineDotNet\phoneStateMachine\ConsumerProducer\bin\Debug\ConsumerProducer.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\ConsumerProducer\obj\Debug\ConsumerProducer.csprojResolveAssemblyReference.cache

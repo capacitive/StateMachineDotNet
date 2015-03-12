@@ -1,0 +1,17 @@
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\Telephone_UI.exe.config
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\Telephone_UI.exe
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\Telephone_UI.pdb
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\ActiveStateMachine.dll
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\ApplicationServices.dll
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\Interfaces.dll
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\TelephoneStateMachine.dll
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\ActiveStateMachine.pdb
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\ApplicationServices.pdb
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\Interfaces.pdb
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Release\TelephoneStateMachine.pdb
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Release\Telephone_UI.csprojResolveAssemblyReference.cache
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Release\Telephone_UI.Properties.Resources.resources
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Release\Telephone_UI.Telephone.resources
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Release\Telephone_UI.csproj.GenerateResource.Cache
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Release\Telephone_UI.exe
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Release\Telephone_UI.pdb

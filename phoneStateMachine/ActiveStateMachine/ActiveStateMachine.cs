@@ -1,20 +1,46 @@
-﻿using System;
+﻿/*
+author: Mark Cafazzo
+email: mark.cafazzo@capacitive.ca
+
+Licensees of this software and components thereof are granted free use under the MIT License (MIT):
+
+Copyright © 2015 Mark Cafazzo and Capacitive Technologies Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using Common;
 using System.Threading;
 using System.Threading.Tasks;
+using Capice.Common;
 
-namespace ActiveStateMachine
+namespace Capice.ActiveStateMachine
 {
     /// <summary>
-    /// base class for ANY state machine implementation
+    /// Base class for active state machines
     /// </summary>
-    class ActiveStateMachine
+    public class ActiveStateMachine
     {
         #region public members
-        public Dictionary<string, State> StateList { get; private set; }
+        public Dictionary<String, State> StateList { get; private set; }
         public BlockingCollection<string> TriggerQueue { get; private set; }
         public State CurrentState { get; private set; }
         public State PreviousState { get; private set; }
@@ -22,12 +48,18 @@ namespace ActiveStateMachine
         public event EventHandler<StateMachineEventArgs> StateMachineEvent; 
         #endregion
 
+        // Private members
         private Task _queueWorkerTask;
         private readonly State _initialState;
         private ManualResetEvent _resumer;
         private CancellationTokenSource _tokenSource;
 
-        public ActiveStateMachine(Dictionary<string, State> stateList, int queueCapacity)
+        /// <summary>
+        /// Constructor Active State Machine
+        /// </summary>
+        /// <param name="stateList"></param>
+        /// <param name="queueCapacity"></param>
+        public ActiveStateMachine(Dictionary<String, State> stateList, int queueCapacity)
         {
             //cnfigure state machine
             StateList = stateList;
@@ -37,40 +69,34 @@ namespace ActiveStateMachine
             //limiting its capacity protects against DOS-style errors or attacks
             TriggerQueue = new BlockingCollection<string>(queueCapacity);
 
-            //init
+            //Initialize
             InitStateMachine();
             //raise an event
             RaiseStateMachineSystemEvent("StateMachine: Initialized", "System ready to start");
             StateMachineEngine = EngineState.Initialized;
         }
 
-        public void InitStateMachine()
-        {
-            PreviousState = _initialState;
+        #region state machine engine
 
-            foreach (var state in StateList)
-            {
-                if (state.Value.IsDefaultState)
-                {
-                    CurrentState = state.Value;
-                    RaiseStateMachineSystemCommand("OnInit", "StateMachineInitialized");
-                }
-            }
-
-            //this is the synchronization object fro resuming - passing true means non-blocking (signaled):
-            _resumer = new ManualResetEvent(true);
-        }
-
+        /// <summary>
+        /// Start the state machine
+        /// </summary>
         public void Start()
         {
+            //create cancellation token for QueueWorker method
             _tokenSource = new CancellationTokenSource();
-            _queueWorkerTask = Task.Factory.StartNew(QueueWorkerMethod, _tokenSource, TaskCreationOptions.LongRunning);
+
+            //create a new worker thread, if it does not exist
+            _queueWorkerTask = Task.Factory.StartNew(QueueWorkerMethod,_tokenSource, TaskCreationOptions.LongRunning);
 
             //set engine state:
             StateMachineEngine = EngineState.Running;
             RaiseStateMachineSystemEvent("StateMachine: Started", "System running.");
         }
 
+        /// <summary>
+        /// Pauses the state machine worker thread.
+        /// </summary>
         public void Pause()
         {
             //set engine state:
@@ -105,6 +131,29 @@ namespace ActiveStateMachine
         }
 
         /// <summary>
+        /// Initializes state machine, but does not start it -> dedicated start method
+        /// </summary>
+        public void InitStateMachine()
+        {
+            // Set previous state to an unspecific initial state. THe initial state never will be used during normal operation
+            PreviousState = _initialState;
+
+            // Look for the default state, which is the state to begin with in StateList.
+            foreach (var state in StateList)
+            {
+                if (state.Value.IsDefaultState)
+                {
+                    CurrentState = state.Value;
+                    //raised in all app services - impl. listener to check that all services have init 
+                    RaiseStateMachineSystemCommand("OnInit", "StateMachineInitialized");
+                }
+            }
+
+            //this is the synchronization object for resuming - passing true means non-blocking (signaled):
+            _resumer = new ManualResetEvent(true);
+        }
+
+        /// <summary>
         /// worker method for trigger queue
         /// </summary>
         /// <param name="obj"></param>
@@ -133,15 +182,20 @@ namespace ActiveStateMachine
                         ExecuteTransition(transition.Value);
                     }
                 }
+                // Do not place any code here, because it will not be executed!
+                // The foreach loop keeps spinning on the queue until thread is canceled.
             }
             catch (Exception exc)
             {
                 RaiseStateMachineSystemEvent("StateMachine: QueueWorker", "Processing cancelled! Exception: " + exc);
                 Start();
             }
-
         }
 
+        /// <summary>
+        /// Transition to a new state
+        /// </summary>
+        /// <param name="transition"></param>
         protected virtual void ExecuteTransition(Transition transition)
         {
             //default transition validation
@@ -159,6 +213,13 @@ namespace ActiveStateMachine
                     transition.TargetStateName, CurrentState.StateName);
                 RaiseStateMachineSystemEvent("StateMachine: Default guard execute transition.", message);
                 return;
+            }
+
+            //Self transition - Just do the transition without executing exit, entry actions or guards
+            if (transition.SourceStateName == transition.TargetStateName)
+            {
+                transition.TransitionActionList.ForEach(t => t.Execute());
+                return; //Important: Return directly from self-transition
             }
 
             //run all exit actions of the old state:
@@ -216,6 +277,8 @@ namespace ActiveStateMachine
             return StateList[targetStateName];
         }
 
+        #endregion
+
         #region event infrastructure
         private void RaiseStateMachineSystemEvent(string eventName, string eventInfo)
         {
@@ -224,7 +287,7 @@ namespace ActiveStateMachine
 
         private void RaiseStateMachineSystemCommand(string eventName, string eventInfo)
         {
-            if (StateMachineEvent != null) StateMachineEvent(this, new StateMachineEventArgs(eventName, eventInfo, StateMachineEventType.Command, "State machine", ""));
+            if (StateMachineEvent != null) StateMachineEvent(this, new StateMachineEventArgs(eventName, eventInfo, StateMachineEventType.Command, "State machine"));
         }
 
         /// <summary>
@@ -234,7 +297,17 @@ namespace ActiveStateMachine
         /// <param name="args"></param>
         public void InternalNotificationHandler(object sender, StateMachineEventArgs args)
         {
-            EnterTrigger(args.EventName);
+            if (args.EventName == "CompleteFailure")
+            {
+                RaiseStateMachineSystemCommand("CompleteFailure", args.EventInfo + "Device: " + args.Source);
+                //stop state machine to avoid any damage:
+                Stop();
+            }
+            else
+            {
+                //normal operation:
+                EnterTrigger(args.EventName);
+            }
         }
         #endregion
     }

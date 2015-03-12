@@ -1,0 +1,47 @@
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.csprojResolveAssemblyReference.cache
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.Properties.Resources.resources
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.Telephone.resources
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.csproj.GenerateResource.Cache
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\Telephone_UI.exe.config
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\Telephone_UI.exe
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\Telephone_UI.pdb
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\ActiveStateMachine.dll
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\ApplicationServices.dll
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\Interfaces.dll
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\TelephoneStateMachine.dll
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\ActiveStateMachine.pdb
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\ApplicationServices.pdb
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\Interfaces.pdb
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\bin\Debug\TelephoneStateMachine.pdb
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.exe
+C:\data_13\Code\State Machines\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.pdb
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\Telephone_UI.exe.config
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.exe
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.pdb
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\Telephone_UI.exe
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\Telephone_UI.pdb
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\ActiveStateMachine.dll
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\ApplicationServices.dll
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\Common.dll
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\TelephoneStateMachine.dll
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\ActiveStateMachine.pdb
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\ApplicationServices.pdb
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\Common.pdb
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\bin\Debug\TelephoneStateMachine.pdb
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.csprojResolveAssemblyReference.cache
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.Properties.Resources.resources
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.Telephone.resources
+C:\Pluralsight\ActiveStateMachine\Telephone_UI\obj\Debug\Telephone_UI.csproj.GenerateResource.Cache
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\obj\Debug\Telephone_UI.csprojResolveAssemblyReference.cache
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\obj\Debug\Telephone_UI.Properties.Resources.resources
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\obj\Debug\Telephone_UI.Telephone.resources
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\obj\Debug\Telephone_UI.csproj.GenerateResource.Cache
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\obj\Debug\Telephone_UI.exe
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\obj\Debug\Telephone_UI.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\bin\Debug\Telephone_UI.exe.config
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\bin\Debug\Telephone_UI.exe
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\bin\Debug\Telephone_UI.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\bin\Debug\TelephoneStateMachine.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\bin\Debug\TelephoneStateMachine.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\bin\Debug\Capiche.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Telephone_UI\bin\Debug\Capiche.pdb

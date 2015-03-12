@@ -1,5 +1,5 @@
 ﻿using System;
-using ApplicationServices;
+using Capiche.ApplicationServices;
 
 namespace TelephoneStateMachine
 {
@@ -10,7 +10,7 @@ namespace TelephoneStateMachine
 
         #region device functions
 
-        //Simulation.  Would not normally be public - called by an internal driver of TCP operation
+        //Simulation.  Would not normally be public - called by an internal driver or TCP operation
         public void ActiveExternal()
         {
             LineActiveExternal = true;

@@ -45,15 +45,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelephoneActivities.cs" />
     <Compile Include="TelephoneDeviceConfiguration.cs" />
+    <Compile Include="TelephoneStateMachine.cs" />
+    <Compile Include="TelephoneStateMachineConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj">
-      <Project>{ddda9ef6-3b90-4837-9099-de91a8078a4c}</Project>
-      <Name>ApplicationServices</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{e86b3664-7305-486a-ac9d-d301e39a5dd5}</Project>
-      <Name>Common</Name>
+    <ProjectReference Include="..\Capice\Capiche.csproj">
+      <Project>{8cd2ff02-dcca-40a4-9dbf-05e4bcface95}</Project>
+      <Name>Capiche</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

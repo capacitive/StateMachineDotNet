@@ -7,7 +7,7 @@
     <ProjectGuid>{E86B3664-7305-486A-AC9D-D301E39A5DD5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Common</RootNamespace>
+    <RootNamespace>Capice.Common</RootNamespace>
     <AssemblyName>Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="IDeviceConfiguration.cs" />
     <Compile Include="IUserInterface.cs" />
+    <Compile Include="IViewState.cs" />
     <Compile Include="IViewStateConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StateMachineEventArgs.cs" />

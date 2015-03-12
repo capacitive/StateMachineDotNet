@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Mark Cafazzo</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>http://capacitive.azurewebsites.net/capiche-state-machine-library</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial version</releaseNotes>
+    <copyright>Copyright 2015 Mark Cafazzo and Capacitive Technologies</copyright>
+    <tags>state machine concurrency BlockingCollection .NET</tags>
+  </metadata>
+</package>

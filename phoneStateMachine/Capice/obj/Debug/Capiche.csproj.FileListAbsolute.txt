@@ -1,0 +1,4 @@
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\bin\Debug\Capacitive.Capiche.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\bin\Debug\Capacitive.Capiche.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\obj\Debug\Capacitive.Capiche.dll
+C:\_repo\StateMachineDotNet\phoneStateMachine\Capice\obj\Debug\Capacitive.Capiche.pdb

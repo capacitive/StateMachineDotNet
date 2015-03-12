@@ -2,3 +2,4 @@ C:\_repo\StateMachineDotNet\phoneStateMachine\UML\bin\Debug\UML.dll
 C:\_repo\StateMachineDotNet\phoneStateMachine\UML\bin\Debug\UML.pdb
 C:\_repo\StateMachineDotNet\phoneStateMachine\UML\obj\Debug\UML.dll
 C:\_repo\StateMachineDotNet\phoneStateMachine\UML\obj\Debug\UML.pdb
+C:\_repo\StateMachineDotNet\phoneStateMachine\UML\obj\Debug\UML.csprojResolveAssemblyReference.cache

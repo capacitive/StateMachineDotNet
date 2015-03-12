@@ -1,5 +1,5 @@
 ﻿using System;
-using ApplicationServices;
+using Capiche.ApplicationServices;
 
 namespace TelephoneStateMachine
 {

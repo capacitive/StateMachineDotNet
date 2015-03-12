@@ -7,8 +7,8 @@
     <ProjectGuid>{DDDA9EF6-3B90-4837-9099-DE91A8078A4C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ApplicationServices</RootNamespace>
-    <AssemblyName>ApplicationServices</AssemblyName>
+    <RootNamespace>Capice.ApplicationServices</RootNamespace>
+    <AssemblyName>Capice.ApplicationServices</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
